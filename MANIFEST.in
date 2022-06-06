@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include openpos_integration *.css
+recursive-include openpos_integration *.csv
+recursive-include openpos_integration *.html
+recursive-include openpos_integration *.ico
+recursive-include openpos_integration *.js
+recursive-include openpos_integration *.json
+recursive-include openpos_integration *.md
+recursive-include openpos_integration *.png
+recursive-include openpos_integration *.py
+recursive-include openpos_integration *.svg
+recursive-include openpos_integration *.txt
+recursive-exclude openpos_integration *.pyc
