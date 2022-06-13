@@ -13,7 +13,7 @@ from frappe.utils.response import build_response
 
 @frappe.whitelist()
 def get_all_products_for_importation():
-    items = frappe.db.get_list('Item', filters=[['is_for_unicenta', '=', "0"]])
+    items = frappe.db.get_list('Item', filters=[['is_for_unicenta', '=', "1"]])
     data = []
     for item in items:
         docItem = frappe.get_doc("Item", item.name).as_dict()
@@ -44,7 +44,7 @@ def getListPrice(item_code, currency, selling):
     result = None
     price_lists = frappe.get_list(
         "Item Price", fields=("currency", "price_list_rate", "selling", "item_code"), filters={"selling": selling, "item_code": item_code, "currency": currency}, order_by="creation desc", limit="1")
-    print(price_lists)
+
     if(price_lists):
         if(price_lists[0]):
             result = price_lists[0]
