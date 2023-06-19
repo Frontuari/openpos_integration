@@ -4,3 +4,5 @@
 *.swp
 tags
 openpos_integration/docs/current
+__pycache__
+openpos_integration/public/dist

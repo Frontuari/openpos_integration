@@ -1,0 +1,9 @@
+[project]
+name = "openpos_integration"
+authors = [
+    { name = "Datacomm", email = "oficinadatacomm@gmail.com"}
+]
+description = "Openpos Integration"
+requires-python = ">=3.8"
+readme = "README.md"
+dynamic = ["version"]
